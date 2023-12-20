@@ -99,7 +99,7 @@ gsap.fromTo(
 gsap.fromTo(
   ".header-content",
   { scale: 1.1 },
-  { scale: 0.95, duration: 5 },
+  { scale: 0.95, duration: 5, padding: 50 },
   "<"
 );
 
