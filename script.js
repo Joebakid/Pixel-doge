@@ -50,30 +50,30 @@ window.addEventListener("scroll", () => {
 
 // GSAP
 // HEADER GALLERY
-const tlIntro = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".first-page",
-    start: "0%",
-    end: "100%",
-    pin: true,
-    pinSpacing: false,
-    scrub: true, // Enable scrubbing for smooth scrolling
-    onUpdate: (self) => {
-      // Update opacity based on scroll position
-      const opacity = 1 - self.progress;
-      gsap.to(".first-page", { opacity: opacity });
-    },
-  },
-});
+// const tlIntro = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".first-page",
+//     start: "0%",
+//     end: "100%",
+//     pin: true,
+//     pinSpacing: false,
+//     scrub: true,
+//     onUpdate: (self) => {
 
-const tlH = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".second-page",
-    scrub: true,
-    start: "-40%",
-    end: "40%",
-  },
-});
+//       const opacity = 1 - self.progress;
+//       gsap.to(".first-page", { opacity: opacity });
+//     },
+//   },
+// });
+
+// const tlH = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".second-page",
+//     scrub: true,
+//     start: "-40%",
+//     end: "40%",
+//   },
+// });
 
 const timeline = gsap.timeline({
   defaults: { ease: "power4.out", duration: 5 },
