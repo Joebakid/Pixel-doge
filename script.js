@@ -97,13 +97,6 @@ gsap.fromTo(
 );
 
 gsap.fromTo(
-  ".btn",
-  { yPercent: -100, opacity: 0 },
-  { yPercent: 0, opacity: 1, duration: 3, ease: "power4.out" },
-  "<"
-);
-
-gsap.fromTo(
   ".header-content",
   { scale: 1.1 },
   { scale: 0.95, duration: 5 },
@@ -145,4 +138,11 @@ gsap.fromTo(
   { yPercent: -50, opacity: 0 },
   { yPercent: 0, stagger: 0.3, skewY: 0, opacity: 1, duration: 0.05 },
   "<"
+);
+
+gsap.fromTo(
+  ".btn",
+  { yPercent: -100, opacity: 0 },
+  { yPercent: 0, opacity: 1, duration: 3, ease: "power4.out" },
+  "<90%"
 );
