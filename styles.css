@@ -22,7 +22,7 @@ body {
 /* SPACING */
 
 header {
-  margin: 150px 0;
+  margin: 80px 0;
   /* border: 1px solid red; */
   /* height: 100vh; */
 }
@@ -242,6 +242,7 @@ nav {
     -webkit-clip-path: circle(100px at 90% -10%);
     transition: all 1s ease-out;
     pointer-events: none;
+    /* z-index: 20; */
   }
 
   .nav-links.open {
@@ -249,6 +250,7 @@ nav {
     -webkit-clip-path: circle(1200px at 100% -10%);
     width: 100%;
     pointer-events: all;
+    /* z-index: 20; */
   }
 
   /* nav {
