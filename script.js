@@ -103,7 +103,12 @@ gsap.fromTo(
   "<"
 );
 
-gsap.fromTo(".header-content", { scale: 0.8 }, { scale: 1, duration: 5 }, "<");
+gsap.fromTo(
+  ".header-content",
+  { scale: 1.1 },
+  { scale: 0.95, duration: 5 },
+  "<"
+);
 
 //HEADER TITLE
 const logo = document.querySelector(".header-title-h2");
