@@ -24,13 +24,13 @@ body {
 header {
   margin: 150px 0;
   /* border: 1px solid red; */
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 section {
   margin: 150px 0;
   /* border: 1px solid red; */
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .black-bg {
@@ -54,6 +54,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #5b78c7;
+  opacity: 0;
 }
 
 .logo {
