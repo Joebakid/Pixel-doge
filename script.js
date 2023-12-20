@@ -27,7 +27,7 @@ navLinks.querySelectorAll(".nav-link").forEach((link) => {
 let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
-  console.log(window.pageYOffset);
+  // console.log(window.pageYOffset);
   const currentScroll = window.pageYOffset;
 
   if (currentScroll <= 0) {
@@ -92,7 +92,7 @@ gsap.fromTo(
 gsap.fromTo(
   "nav",
   { yPercent: -50, opacity: 0 },
-  { yPercent: 0, opacity: 1, duration: 3 },
+  { yPercent: 0, opacity: 1, duration: 0.5 },
   "<"
 );
 
