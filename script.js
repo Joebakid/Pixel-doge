@@ -170,7 +170,7 @@ const tlthirdPage = gsap.timeline({
     trigger: ".third-page",
     start: "0%",
     end: "10%",
-    scrub: true,
+    // scrub: true,
     pin: true,
     pinSpacing: false,
   },
