@@ -165,19 +165,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const tlthirdPage = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".third-page",
-    start: "0%",
-    end: "10%",
-    // scrub: true,
-    pin: true,
-    pinSpacing: false,
-  },
-});
+// const tlthirdPage = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".third-page",
+//     start: "0%",
+//     end: "10%",
+//     // scrub: true,
+//     pin: true,
+//     pinSpacing: false,
+//   },
+// });
 
-tlthirdPage.fromTo(
-  ".third-page",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.3 }
-);
+// tlthirdPage.fromTo(
+//   ".third-page",
+//   { opacity: 0 },
+//   { opacity: 1, duration: 0.3 }
+// );
