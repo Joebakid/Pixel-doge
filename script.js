@@ -22,7 +22,7 @@ links.forEach((link) => {
 const tlIntro = gsap.timeline({
   scrollTrigger: {
     trigger: ".first-page",
-    start: "0%",
+    start: "30%",
     end: "100%",
     pin: true,
     pinSpacing: false,
