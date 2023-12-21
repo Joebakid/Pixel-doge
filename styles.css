@@ -27,10 +27,11 @@ header {
   margin: 80px 0;
   /* padding: 100px; */
   color: white;
+  /* background-color: white; */
 }
 
 section {
-  margin: 150px 0;
+  margin: 300px 0;
 }
 
 .bg {
@@ -298,7 +299,7 @@ section {
   background-color: #5b78c7;
   border-radius: 50px;
   padding: 100px 0;
-
+  /* margin: 10px 0 0 0; */
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -306,6 +307,7 @@ section {
 
 .third-page {
   overflow: hidden;
+  /* background-color: white; */
 }
 
 .title-section {
@@ -437,6 +439,60 @@ section {
   height: 100%;
 }
 
+/* /////////////////////////////////////// */
+/* FOURTH PAGE */
+
+.btn-scale {
+  transform: scale(0.6);
+}
+
+.card-content p {
+  margin-bottom: 10px;
+}
+
+.fourth-page {
+  padding: 200px 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #444;
+  gap: 30px;
+}
+
+.glassmorphism {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dev-card-img {
+  width: 100px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.title-card {
+  text-align: center;
+}
+
+.card-about-us {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  height: auto;
+}
+
 /* ////////////////////////////////////// */
 /* MEDIA QUERY */
 
@@ -560,6 +616,12 @@ section {
 
   .right-container {
     left: 0;
+  }
+
+  /* FOURTH PAGE */
+  .card-container {
+    flex-direction: column;
+    gap: 30px;
   }
 
   /*  */
