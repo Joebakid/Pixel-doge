@@ -2,24 +2,15 @@
 
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".link-container");
-const navLink = document.querySelector(".nav-link");
-const body = document.body;
+const links = document.querySelectorAll(".nav-links .nav-link");
 
 hamburger.addEventListener("click", function () {
-  navLinks.classList.toggle("open");
-  links.forEach((link) => {
-    link.classList.toggle("fade");
-  });
+  navLinks.classList.toggle("active");
 });
 
-navLinks.querySelectorAll(".nav-link").forEach((link) => {
+links.forEach((link) => {
   link.addEventListener("click", function () {
-    // Close the navigation menu
-    navLinks.classList.remove("open");
-    links.forEach((link) => {
-      link.classList.remove("fade");
-    });
+    navLinks.classList.remove("active");
   });
 });
 
