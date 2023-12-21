@@ -38,6 +38,10 @@ section {
 /* ///////////////////////////////////// */
 /* NAV */
 
+.nav {
+  width: 100%;
+}
+
 .pixel-design-img-container {
   display: none;
 }
@@ -225,7 +229,7 @@ section {
 
 @media screen and (max-width: 900px) {
   .container {
-    width: 97%;
+    width: 90%;
   }
 
   /* NAV */
