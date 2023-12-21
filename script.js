@@ -142,7 +142,7 @@ gsap.fromTo(
 
 gsap.fromTo(
   ".btn",
-  { yPercent: -100, opacity: 0 },
+  { yPercent: -10, opacity: 0 },
   { yPercent: 0, opacity: 1, duration: 3, ease: "power4.out" },
   "<90%"
 );
