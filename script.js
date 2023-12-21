@@ -165,6 +165,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// ///////////////////////////////////////////
+// THIRD-PAGE
+
 const tlthirdPage = gsap.timeline({
   scrollTrigger: {
     trigger: ".third-page",
@@ -182,10 +185,28 @@ const tlthirdPage = gsap.timeline({
 //   { opacity: 1, duration: 0.3 }
 // );
 
-// ///////////////////////////////////////////
-// THIRD-PAGE
 tlthirdPage.fromTo(
   ".third-page",
   { opacity: 0, yPercent: 50 },
   { opacity: 1, duration: 1, yPercent: 0, stagger: 0.3, skewY: 0 }
+);
+
+// ///////////////////////////////////////////
+// FOURTH-PAGE
+
+const tlfourthPage = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".fourth-page",
+    start: "0%",
+    end: "10%",
+    // scrub: true,
+    // pin: true,
+    // pinSpacing: false,
+  },
+});
+
+tlfourthPage.fromTo(
+  ".card-about-us",
+  { opacity: 0, xPercent: -50, skewY: 4 },
+  { opacity: 1, duration: 3, stagger: 0.5, xPercent: 0, skewY: 0 }
 );
