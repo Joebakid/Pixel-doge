@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/logo.png" />
     <script defer src="script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <title>Pixel Doge</title>
   </head>
@@ -18,8 +19,8 @@
       </div>
       <ul class="nav-links">
         <li><a class="nav-link-a" href="#">Home</a></li>
-        <li><a class="nav-link-a" href="#">About</a></li>
         <li><a class="nav-link-a" href="#">RoadMap</a></li>
+        <li><a class="nav-link-a" href="#">About us</a></li>
         <div class="pixel-design-img-container">
           <img class="pixel-design-img" src="img/472.png" alt="" />
         </div>
@@ -104,8 +105,22 @@
     <section class="bg second-page">
       <div class="container">
         <div class="design-container">
-          <img class="left-second-two" src="img/472.png" alt="" />
-          <img class="right-second-two" src="img/472.png" alt="" />
+          <img
+            data-aos="fade-right"
+            data-aos-delay="1000"
+            data-aos-once="true"
+            class="left-second-two"
+            src="img/472.png"
+            alt=""
+          />
+          <img
+            data-aos="fade-left"
+            class="right-second-two"
+            data-aos-delay="1000"
+            data-aos-once="true"
+            src="img/472.png"
+            alt=""
+          />
         </div>
 
         <div class="section-two-content">
@@ -132,7 +147,60 @@
       </div>
     </section>
 
-    <section></section>
+    <section class="third-page">
+      <div class="container bg-card">
+        <h2 class="title-section">Our Roadmap</h2>
+
+        <div class="my-timeline">
+          <div class="my-container left-container">
+            <h5>Completed</h5>
+            <div class="text-box">
+              <p>Distribute PixelDoge NFT to BM2k holders</p>
+            </div>
+          </div>
+          <div class="my-container right-container">
+            <h5>PHASE 1</h5>
+            <div class="text-box">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, rerum! Non, laborum illum ea at ducimus, quia animi
+                veniam, sapiente laudantium saepe magni aliquid dignissimos
+                rerum quam placeat consectetur! Assumenda.
+              </p>
+            </div>
+          </div>
+          <div class="my-container left-container">
+            <h5>PHASE 2</h5>
+            <div class="text-box">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, rerum! Non, laborum illum ea at ducimus, quia animi
+                veniam, sapiente laudantium saepe magni aliquid dignissimos
+                rerum quam placeat consectetur! Assumenda.
+              </p>
+            </div>
+          </div>
+          <div class="my-container right-container">
+            <h5>PHASE 3</h5>
+            <div class="text-box">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, rerum! Non, laborum illum ea at ducimus, quia animi
+                veniam, sapiente laudantium saepe magni aliquid dignissimos
+                rerum quam placeat consectetur! Assumenda.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-line"></div>
+          <img
+            class="timeline-image"
+            src="http://flagcorp.brandedbybrandemic.com/wp-content/uploads/2023/10/Frame-39652-1.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
 
     <section></section>
 
@@ -149,6 +217,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- END -->
+    <!-- ////////// -->
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- END -->
   </body>
 </html>

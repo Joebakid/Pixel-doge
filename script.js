@@ -147,3 +147,37 @@ tlSecondPage.fromTo(
   { color: "#444", duration: 0.7, opacity: 1 },
   "<50%"
 );
+
+// ROADMAP
+document.addEventListener("DOMContentLoaded", function () {
+  const timelineLine = document.querySelector(".timeline-line");
+  const timelineImage = document.querySelector(".timeline-image");
+
+  const maxTimelineHeight =
+    (document.querySelectorAll(".my-container").length - 1) * 100;
+
+  window.addEventListener("scroll", () => {
+    const scrollPercentage = (window.scrollY / maxTimelineHeight) * 65; //Adjust the speed as needed
+
+    const adjustedPercentage = Math.min(100, scrollPercentage);
+    timelineLine.style.height = `${adjustedPercentage}%`;
+    timelineImage.style.top = `${adjustedPercentage}%`;
+  });
+});
+
+const tlthirdPage = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".third-page",
+    start: "0%",
+    end: "10%",
+    scrub: true,
+    pin: true,
+    pinSpacing: false,
+  },
+});
+
+tlthirdPage.fromTo(
+  ".third-page",
+  { opacity: 0 },
+  { opacity: 1, duration: 0.3 }
+);
