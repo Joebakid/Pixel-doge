@@ -5,6 +5,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "JetBrains Mono", monospace;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -13,6 +18,7 @@
   padding: 20px 0;
   overflow-x: hidden;
 }
+
 body {
   /* height: 3000px; */
   transition: all 0.5 ease-in;
@@ -441,11 +447,17 @@ section {
   height: 100%;
 }
 
+.join-text {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 /* /////////////////////////////////////// */
 /* FOURTH PAGE */
 
 .btn-scale {
   transform: scale(0.6);
+  /* font-size: 1.4rem; */
 }
 
 .card-content p {
@@ -496,8 +508,68 @@ section {
   height: auto;
 }
 
+.line-faq {
+  margin: 100px 0;
+}
+
 /* ///////////////////////// */
 /* FOURTH PAGE- FAQ SECTION */
+
+.accordion-container {
+  width: 100%;
+  /* max-width: 600px; */
+}
+
+.accordion-item {
+  background-color: #ffffff; /* White background for items */
+  border: 1px solid #e0e0e0; /* Light border */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  /* width: 100%; */
+}
+
+.accordion-header {
+  background-color: #6c63ff; /* Soft purple */
+  color: #ffffff; /* White text */
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #5753c9; /* Darker shade of purple */
+}
+
+.accordion-content {
+  background-color: #fafafa; /* Very light grey for content */
+  overflow: hidden;
+  padding: 0 15px;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.active .icon {
+  transform: rotate(45deg);
+}
 
 /* ////////////////////////////////////// */
 /* MEDIA QUERY */
