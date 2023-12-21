@@ -7,6 +7,7 @@ const links = document.querySelectorAll(".nav-link-a");
 
 hamburger.addEventListener("click", function () {
   navLinks.classList.toggle("active");
+  gsap.fromTo(".nav-links", { yPercent: -20 }, { yPercent: 0 });
 });
 
 links.forEach((link) => {
@@ -141,10 +142,21 @@ tlSecondPage.fromTo(
   { color: "white", duration: 0.7, opacity: 1 },
   "<"
 );
-tlSecondPage.fromTo(
-  ".second-second-text",
-  { color: "inherit", opacity: 0 },
-  { color: "#444", duration: 0.7, opacity: 1 },
+
+const textHighlight = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".second-page",
+    // markers: { startColor: "blue", endColor: "white" },
+    scrub: true,
+    start: "10%",
+    end: "40%",
+  },
+});
+
+textHighlight.fromTo(
+  ".highlight",
+  { color: "#444" },
+  { color: "rgba(255,255,255,1)", stagger: 1 },
   "<50%"
 );
 
