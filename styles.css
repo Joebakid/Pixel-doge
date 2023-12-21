@@ -29,13 +29,16 @@ header {
 
 section {
   margin: 150px 0;
-  /* height: 100vh; */
-  height: 1000px;
-  background-color: #282727;
 }
 
-.black-bg {
-  background-color: #282727;
+.bg {
+  background: rgb(91, 120, 199);
+  background: linear-gradient(
+    333deg,
+    rgba(91, 120, 199, 1) 0%,
+    rgba(255, 192, 203, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 /* //////////////////////////////////// */
@@ -45,6 +48,7 @@ section {
 
 .nav {
   width: 100%;
+  z-index: 3;
 }
 
 .pixel-design-img-container {
@@ -155,11 +159,11 @@ section {
 }
 
 .first-page {
-  z-index: 2;
+  z-index: 1;
 }
 
 .second-page {
-  z-index: 10;
+  z-index: 1;
 }
 
 /* BTN */
@@ -252,6 +256,40 @@ section {
   border-radius: 50%;
 }
 
+.section-two-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.watch-pixel {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 20px;
+  opacity: 0;
+}
+
+.section-two-content {
+  padding: 100px 0;
+  transform: scale(0.9);
+}
+
+.second-second-text {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  padding: 20px 0 0 0;
+  color: #444;
+  opacity: 0;
+}
+
+.section-two-title {
+  font-size: 3rem;
+  color: #fff;
+  opacity: 0;
+}
+
 /* ////////////////////////////////////// */
 /* MEDIA QUERY */
 
@@ -333,6 +371,20 @@ section {
   .disappear {
     visibility: hidden;
     height: 0;
+  }
+
+  /* SECTION-TWO */
+  .section-two-content {
+    grid-template-columns: 1fr;
+  }
+
+  .second-second-text {
+    font-size: 1.1rem;
+  }
+
+  .section-two-title {
+    font-size: 2rem;
+    color: #fff;
   }
 
   /*  */

@@ -22,7 +22,7 @@ links.forEach((link) => {
 const tlIntro = gsap.timeline({
   scrollTrigger: {
     trigger: ".first-page",
-    start: "50%",
+    start: "70%",
     end: "100%",
     pin: true,
     pinSpacing: false,
@@ -38,7 +38,7 @@ const tlH = gsap.timeline({
   scrollTrigger: {
     trigger: ".second-page",
     scrub: true,
-    start: "-40%",
+    start: "-90%",
     end: "40%",
   },
 });
@@ -113,4 +113,37 @@ gsap.fromTo(
   { yPercent: -10, opacity: 0 },
   { yPercent: 0, opacity: 1, duration: 0.1, ease: "power4.out" },
   "<90%"
+);
+
+// gsap.fromTo(
+//   ".watch-pixel",
+//   { backgroundColor: "inherit" },
+//   { backgroundColor: "white", duration: 3 }
+// );
+
+const tlSecondPage = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".second-page",
+    start: "0",
+    end: "50%",
+    // scrub: true,
+  },
+});
+
+tlSecondPage.fromTo(
+  ".watch-pixel",
+  { backgroundColor: "inherit", opacity: 0 },
+  { backgroundColor: "white", duration: 0.7, opacity: 1 }
+);
+tlSecondPage.fromTo(
+  ".section-two-title",
+  { color: "inherit", opacity: 0 },
+  { color: "white", duration: 0.7, opacity: 1 },
+  "<"
+);
+tlSecondPage.fromTo(
+  ".second-second-text",
+  { color: "inherit", opacity: 0 },
+  { color: "#444", duration: 0.7, opacity: 1 },
+  "<50%"
 );
