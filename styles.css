@@ -86,20 +86,6 @@ nav {
   transition: all 0.5s ease-in;
 }
 
-/* SCROLL-UP */
-.scroll-up nav {
-  transition: all 0.5s ease-in;
-  /* filter: drop-shadow(0 -10px 20px rgb(170, 170, 170)); */
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
-/* SCROLL-DOWN */
-.scroll-down nav {
-  /* hiding the navBar */
-  transform: translate3d(0, -100%, 0);
-  transition: all 0.5s ease-in;
-}
-
 /* ///////////////////////////////////// */
 
 /* ////////////////////////////////// */
@@ -143,8 +129,8 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  margin: 0 0 0px 0;
-  /* padding: 50px 0; */
+  margin: 110px 0 110px 0;
+  padding: 50px 0;
 }
 
 .header-gallery {
@@ -325,6 +311,7 @@ nav {
 
   .header-content {
     grid-template-columns: 1fr;
+    margin: 50px 0 50px 0;
   }
 
   .header-text-p {
@@ -337,7 +324,7 @@ nav {
 
   /* BTN */
   .btn {
-    width: 100%;
+    width: 70%;
     font-size: 1.3rem;
   }
 
