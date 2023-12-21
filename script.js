@@ -208,5 +208,5 @@ const tlfourthPage = gsap.timeline({
 tlfourthPage.fromTo(
   ".card-about-us",
   { opacity: 0, xPercent: -50, skewY: 4 },
-  { opacity: 1, duration: 3, stagger: 0.5, xPercent: 0, skewY: 0 }
+  { opacity: 1, duration: 0.5, stagger: 0.5, xPercent: 0, skewY: 0 }
 );
