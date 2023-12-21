@@ -23,7 +23,13 @@ body {
   /* height: 3000px; */
   transition: all 0.5 ease-in;
   position: relative;
-  background-color: #444;
+  background: rgb(91, 120, 199);
+  background: linear-gradient(
+    333deg,
+    rgba(91, 120, 199, 1) 0%,
+    rgba(255, 192, 203, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 /* /////////////////////////////////////// */
@@ -32,7 +38,7 @@ body {
 header {
   margin: 80px 0;
   /* padding: 100px; */
-  color: white;
+  color: #444;
   /* background-color: white; */
 }
 
@@ -41,13 +47,13 @@ section {
 }
 
 .bg {
-  background: rgb(91, 120, 199);
+  /* background: rgb(91, 120, 199);
   background: linear-gradient(
     333deg,
     rgba(91, 120, 199, 1) 0%,
     rgba(255, 192, 203, 1) 100%,
     rgba(0, 0, 0, 1) 100%
-  );
+  ); */
 }
 
 /* //////////////////////////////////// */

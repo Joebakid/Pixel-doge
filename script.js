@@ -155,8 +155,8 @@ const textHighlight = gsap.timeline({
 
 textHighlight.fromTo(
   ".highlight",
-  { color: "#444" },
-  { color: "rgba(255,255,255,1)", stagger: 1 },
+  { color: "rgba(255,255,255,1)" },
+  { color: "#444", stagger: 1 },
   "<50%"
 );
 
