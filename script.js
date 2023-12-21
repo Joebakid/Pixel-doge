@@ -165,19 +165,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// const tlthirdPage = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".third-page",
-//     start: "0%",
-//     end: "10%",
-//     // scrub: true,
-//     pin: true,
-//     pinSpacing: false,
-//   },
-// });
+const tlthirdPage = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".third-page",
+    start: "0%",
+    end: "10%",
+    scrub: true,
+    pin: true,
+    pinSpacing: false,
+  },
+});
 
 // tlthirdPage.fromTo(
 //   ".third-page",
 //   { opacity: 0 },
 //   { opacity: 1, duration: 0.3 }
 // );
+
+// ///////////////////////////////////////////
+// THIRD-PAGE
+tlthirdPage.fromTo(
+  ".third-page",
+  { opacity: 0, yPercent: 50 },
+  { opacity: 1, duration: 1, yPercent: 0, stagger: 0.3, skewY: 0 }
+);
