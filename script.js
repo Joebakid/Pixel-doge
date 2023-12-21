@@ -7,7 +7,7 @@ const links = document.querySelectorAll(".nav-link-a");
 
 hamburger.addEventListener("click", function () {
   navLinks.classList.toggle("active");
-  gsap.fromTo(".nav-links", { yPercent: -20 }, { yPercent: 0 });
+  gsap.fromTo(".nav-links", { yPercent: -10 }, { yPercent: 0 });
 });
 
 links.forEach((link) => {

@@ -509,6 +509,10 @@ section {
 
   /* NAV */
 
+  .logo {
+    margin-left: 0px;
+  }
+
   .pixel-design-img-container {
     display: flex;
     /*  */
@@ -556,6 +560,7 @@ section {
   .header-image {
     width: 100%;
     height: 100%;
+    opacity: 0;
   }
 
   .header-content {
