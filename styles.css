@@ -42,18 +42,25 @@ header {
   /* background-color: white; */
 }
 
-section {
-  padding: 300px 0;
+/* SPECIAL CLASSS */
+.sticky {
+  position: fixed;
+  background-color: inherit;
+
+  border: none;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: all 0.5s ease-in;
+  top: 0;
+  height: 70px;
+  z-index: 2;
 }
 
-.bg {
-  /* background: rgb(91, 120, 199);
-  background: linear-gradient(
-    333deg,
-    rgba(91, 120, 199, 1) 0%,
-    rgba(255, 192, 203, 1) 100%,
-    rgba(0, 0, 0, 1) 100%
-  ); */
+section {
+  padding: 300px 0;
 }
 
 /* //////////////////////////////////// */
@@ -77,11 +84,7 @@ section {
   align-items: center;
   background-color: #5b78c7;
   padding: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
+  transition: all 0.5s ease-in;
 }
 
 .logo {

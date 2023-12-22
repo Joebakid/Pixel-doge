@@ -18,6 +18,27 @@ links.forEach((link) => {
   });
 });
 
+// STICKY NAV
+const nav = document.querySelector("nav");
+const header = document.querySelector("header");
+const body = document.querySelector("body");
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) nav.classList.add("sticky");
+  else nav.classList.remove("sticky");
+};
+
+const navHeight = nav.getBoundingClientRect().height;
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+});
+
+headerObserver.observe(header);
+
 // GSAP;
 // SCROLL PAGES
 const tlIntro = gsap.timeline({
