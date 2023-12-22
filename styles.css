@@ -306,6 +306,23 @@ section {
   opacity: 0;
 }
 
+.down-arrow {
+  width: 200px;
+  height: auto;
+}
+
+.scroll-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-content p {
+  font-size: 1.2rem;
+}
+
 /* /////////////////////////////////////// */
 /* THIRD PAGE -ROADMAP */
 .bg-card {

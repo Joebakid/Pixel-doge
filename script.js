@@ -160,6 +160,13 @@ textHighlight.fromTo(
   "<50%"
 );
 
+// Scroll
+gsap.fromTo(
+  ".scroll-text",
+  { fontSize: "1.2rem" },
+  { fontSize: "2rem", duration: 1 }
+);
+
 // ROADMAP
 document.addEventListener("DOMContentLoaded", function () {
   const timelineLine = document.querySelector(".timeline-line");
