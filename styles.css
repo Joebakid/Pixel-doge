@@ -315,9 +315,11 @@ section {
 .scroll-content {
   display: flex;
   flex-direction: column;
-  margin-top: 300px;
+
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  padding-top: 300px;
 }
 
 .scroll-content p {

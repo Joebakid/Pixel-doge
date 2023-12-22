@@ -160,11 +160,22 @@ textHighlight.fromTo(
   "<50%"
 );
 
-// Scroll
-gsap.fromTo(
-  ".scroll-text",
-  { fontSize: "1.2rem" },
-  { fontSize: "2rem", duration: 1 }
+// SCROLL
+
+const arrowScroll = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".scroll-content",
+    // markers: { startColor: "blue", endColor: "white" },
+    scrub: true,
+    start: "-100%",
+    end: "100%",
+  },
+});
+
+arrowScroll.fromTo(
+  ".scroll-content",
+  { opacity: 0, yPercent: -50 },
+  { opacity: 1, duration: 1, yPercent: 0, yoyo: true }
 );
 
 // ROADMAP
