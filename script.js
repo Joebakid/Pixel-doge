@@ -18,32 +18,6 @@ links.forEach((link) => {
   });
 });
 
-// STICKY NAV
-document.addEventListener("DOMContentLoaded", function () {
-  const nav = document.querySelector("nav");
-  const header = document.querySelector("header");
-
-  const stickyNav = function (entries) {
-    const [entry] = entries;
-
-    if (!entry.isIntersecting) {
-      nav.classList.add("sticky");
-    } else {
-      nav.classList.remove("sticky");
-    }
-  };
-
-  const navHeight = nav.getBoundingClientRect().height;
-
-  const headerObserver = new IntersectionObserver(stickyNav, {
-    root: null,
-    threshold: 0,
-    rootMargin: `${navHeight}px 0px 0px 0px`, // Positive value to trigger when header is scrolled out of view
-  });
-
-  headerObserver.observe(header);
-});
-
 // CSS remains the same
 
 // GSAP;

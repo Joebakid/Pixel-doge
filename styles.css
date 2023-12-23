@@ -42,23 +42,6 @@ header {
   /* background-color: white; */
 }
 
-/* SPECIAL CLASSS */
-.sticky {
-  position: fixed;
-  background-color: inherit;
-
-  border: none;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  transition: all 1s ease-in-out;
-  top: 0;
-  height: 70px;
-  z-index: 2;
-}
-
 section {
   padding: 300px 0;
 }
@@ -70,7 +53,7 @@ section {
 
 .nav {
   width: 100%;
-  z-index: 3;
+
   align-items: center;
   transition: all 1s ease-in-out;
   opacity: 0;
@@ -87,6 +70,11 @@ section {
   background-color: #5b78c7;
   padding: 10px;
   transition: all 0.5s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
 }
 
 .logo {
