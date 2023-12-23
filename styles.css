@@ -53,7 +53,7 @@ header {
   display: flex;
   align-items: center;
   padding: 20px;
-  transition: all 0.5s ease-in;
+  transition: all 1s ease-in-out;
   top: 0;
   height: 70px;
   z-index: 2;
@@ -72,6 +72,8 @@ section {
   width: 100%;
   z-index: 3;
   align-items: center;
+  transition: all 1s ease-in-out;
+  opacity: 0;
 }
 
 .pixel-design-img-container {
@@ -84,7 +86,7 @@ section {
   align-items: center;
   background-color: #5b78c7;
   padding: 10px;
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in-out;
 }
 
 .logo {

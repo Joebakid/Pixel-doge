@@ -19,25 +19,32 @@ links.forEach((link) => {
 });
 
 // STICKY NAV
-const nav = document.querySelector("nav");
-const header = document.querySelector("header");
-const body = document.querySelector("body");
+document.addEventListener("DOMContentLoaded", function () {
+  const nav = document.querySelector("nav");
+  const header = document.querySelector("header");
 
-const stickyNav = function (entries) {
-  const [entry] = entries;
+  const stickyNav = function (entries) {
+    const [entry] = entries;
 
-  if (!entry.isIntersecting) nav.classList.add("sticky");
-  else nav.classList.remove("sticky");
-};
+    if (!entry.isIntersecting) {
+      nav.classList.add("sticky");
+    } else {
+      nav.classList.remove("sticky");
+    }
+  };
 
-const navHeight = nav.getBoundingClientRect().height;
+  const navHeight = nav.getBoundingClientRect().height;
 
-const headerObserver = new IntersectionObserver(stickyNav, {
-  root: null,
-  threshold: 0,
+  const headerObserver = new IntersectionObserver(stickyNav, {
+    root: null,
+    threshold: 0,
+    rootMargin: `${navHeight}px 0px 0px 0px`, // Positive value to trigger when header is scrolled out of view
+  });
+
+  headerObserver.observe(header);
 });
 
-headerObserver.observe(header);
+// CSS remains the same
 
 // GSAP;
 // SCROLL PAGES
@@ -79,12 +86,12 @@ gsap.fromTo(
   { scale: 1, duration: 2, opacity: 1 }
 );
 
-gsap.fromTo(
-  "nav",
-  { yPercent: -50, opacity: 0 },
-  { yPercent: 0, opacity: 1, duration: 0.5 },
-  "<"
-);
+// gsap.fromTo(
+//   "nav",
+//   { yPercent: -50, opacity: 0 },
+//   { yPercent: 0, opacity: 1, duration: 1 },
+//   "<"
+// );
 
 gsap.fromTo(
   ".header-content",
