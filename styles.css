@@ -623,7 +623,7 @@ section {
     right: 0;
     background-color: rgb(92, 90, 90);
     transition: all 0.5s ease-in-out;
-    padding: 100px;
+    padding: 30px;
     overflow: hidden;
     height: 100vh;
   }
